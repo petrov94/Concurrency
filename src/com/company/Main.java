@@ -5,15 +5,15 @@ public class Main {
     public static void main(String args[]){
 
         Shop pernikGlaven = new Shop();
-        Deliver vankata = new Deliver("Magitoooo da se ne surdi",pernikGlaven);
-        Deliver pepi = new Deliver("TOQ E ZLE", pernikGlaven);
-        Buyer nikolinka = new Buyer("tonkata", pernikGlaven);
-        Buyer stanoicho = new Buyer("antoncho", pernikGlaven);
+        Deliver deliver1 = new Deliver("deliver1",pernikGlaven);
+        Deliver deliver2 = new Deliver("deliver2", pernikGlaven);
+        Buyer buyer1 = new Buyer("buyer1", pernikGlaven);
+        Buyer buyer2 = new Buyer("buyer2", pernikGlaven);
 
 
-        vankata.start();
-        pepi.start();
-        nikolinka.start();
-        stanoicho.start();
+        deliver1.start();
+        deliver2.start();
+        buyer1.start();
+        buyer2.start();
     }
 }

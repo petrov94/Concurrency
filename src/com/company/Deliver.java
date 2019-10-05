@@ -14,7 +14,13 @@ class Deliver extends Thread {
 
    public void run(){
         while(true) {
-            shop.deliver();
+            try {
+                System.out.println("Waiting for a deliver.");
+                shop.deliver();
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
    }
 }
